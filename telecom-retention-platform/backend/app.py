@@ -19,7 +19,7 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# ── CORS — allows Flutter app to call this API ─────────────────
+# ── CORS — allows app to call this API ─────────────────
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -34,7 +34,6 @@ app.add_middleware(
 def health_check():
     """
     Check if API is running and model is loaded.
-    Flutter app calls this on startup.
     """
     return {
         "status": "healthy",
