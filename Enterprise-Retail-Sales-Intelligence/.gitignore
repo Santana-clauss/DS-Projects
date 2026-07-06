@@ -1,0 +1,17 @@
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+*.pyo
+*.pyd
+
+.env
+.venv
+venv/
+
+.DS_Store
+
+models/*
+!models/.gitkeep
+
+data/processed/*
+!data/processed/.gitkeep
